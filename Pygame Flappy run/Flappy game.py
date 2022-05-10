@@ -16,6 +16,9 @@ red_surface.fill('Red')
 ground_surface=pygame.Surface((800,200))
 ground_surface=pygame.image.load("graphics/ground.png")
 
+rosemary_surface=pygame.Surface((90,36))
+rosemary_surface=pygame.image.load("graphics/rosemary.png")
+
 test_font=pygame.font.Font(None,50)
 text_surface=test_font.render("Flappy Run",True,"Yellow")
 #if the attribute is true we get normal text if false we get text in pixels
@@ -36,6 +39,9 @@ while True:
     screen.blit(bg_surface,(0,0))
     screen.blit(ground_surface,(0,300))
     screen.blit(text_surface,(300,50))
+    screen.blit(rosemary_surface,(0,280))
+    screen.blit(rosemary_surface,(750,280))
+
     snail_xcoordinate-=1
     if snail_xcoordinate==0:
         snail_xcoordinate=800
