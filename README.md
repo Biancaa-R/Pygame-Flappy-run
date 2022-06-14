@@ -1,2 +1,2 @@
 # Pygame-Flappy-run
-A flappy run game designed with pygame (under construction)
+A flappy run game designed with pygame 
